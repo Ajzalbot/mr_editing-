@@ -100,8 +100,7 @@ async def start(bot, cmd):
                 ]
             )
         )
-    else: await cmd.reply_photo( photo=f"{random.choice(PHOTO)}", caption=START_MSG, reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("❔ How To Use Me ❔", url="https://t.me/tg_bots_updates") ], [ InlineKeyboardButton("🙂 source code", url="https://github.com/Lallu-lallus/ALPHA_IMDB_BOT"), InlineKeyboardButton("😎 About", callback_data="about") ], [ InlineKeyboardButton("1 Dev", url="https://t.me/joinchat/Hn3YHLdbQf04MmM1"), InlineKeyboardButton("2 Dev", url="https://t.me/darkz_angel") ], [ InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/Dqautofl_bot?startgroup=true") ] ] ) )
-
+    
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
