@@ -7,6 +7,15 @@ from utils import Media, get_file_details, get_size
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
+#photo code kanged from @codes4ya Channel !
+#Add atleast 10+ Telegraph Links below 👇
+
+
+PHOTO = [
+     "https://telegra.ph/file/d0148dd1617808bf7b79a.jpg",
+
+]
+
 @Client.on_message(filters.command("start"))
 async def start(bot, cmd):
     usr_cmdall1 = cmd.text
